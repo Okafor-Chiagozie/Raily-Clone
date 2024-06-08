@@ -1,0 +1,118 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   overflow-x: hidden;
+}
+
+:root{
+   --main-white: #ffffff;
+   --main-black: #000000;
+
+   --primary-color: #9F7A57;
+   --secondary-color: #d0d8de;
+   
+   --background-grey: #f7f7f7;
+   --first-grey: #f2f2f2;
+   --second-grey: #e6e7ee;
+   --semi-second-grey: #d3d3d6;
+   --third-grey: #959595;
+   --fourth-grey: #686868;
+
+   --rem-4: 4rem;
+   --rem-3: 3rem;
+   --rem-2-5: 2.5rem;
+   --rem-2: 2rem;
+   --rem-1-8: 1.8rem;
+   --rem-1-5: 1.5rem;
+   --rem-1-4: 1.4rem;
+   --rem-1-3: 1.3rem;
+   --rem-1-2: 1.2rem;
+   --rem-1-1: 1.1rem;
+   --rem-1: 1rem;
+}
+
+@font-face {
+   font-family: lufga;
+   src: url(/fonts/Lufga-Regular.otf);
+}
+
+body{
+   scroll-behavior: smooth;
+   position: relative;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   font-family: lufga, sans-serif;
+   background-color: var(--main-black);
+   color: var(--main-white);
+}
+
+.main-header{
+   position: fixed;
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 6px;
+   padding-inline: 20px;
+}
+
+.main-header .logo-section{
+   width: 90px;
+   height: auto;
+   align-self: flex-end;
+}
+
+.main-header .logo-section>img{
+   max-width: 100%;
+   width: auto;
+}
+
+.main-header .menu-section{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-block: 5px;
+   padding-inline: 10px;
+   background-color: rgba(255, 255, 255, 0.18);
+   backdrop-filter: blur(5px);
+   border-radius: 50px;
+}
+
+.main-header .menu-section>a{
+   color: var(--main-white);
+   text-decoration: none;
+   font-size: 0.65rem;
+   font-weight: 500;
+   padding-block: 5px;
+   padding-inline: 21px;
+   border-radius: 50px;
+   transition: 0.5s;
+}
+
+.main-header .menu-section>a:hover{
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-header .contact-section{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.main-header .contact-section>a{
+   color: var(--main-white);
+   text-decoration: none;
+   font-size: 0.65rem;
+   font-weight: 500;
+}
+   

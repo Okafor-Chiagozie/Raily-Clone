@@ -1,0 +1,60 @@
+.div-one{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   padding-top: 65px;
+}
+
+.div-one .banner-image{
+   width: 100%;
+   height: auto;
+   display: flex;
+   /* border: 1px solid red; */
+}
+
+.div-one .banner-image{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-one>p{
+   width: 100%;
+   height: auto;
+   text-align: center;
+   font-size: 1.3rem;
+   letter-spacing: 0.2px;
+}
+
+.div-one .image-group{
+   margin-top: 23px;
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-one .image-group .image-container{
+   width: 178px;
+   height: auto;
+   display: flex;
+}
+
+.div-one .image-group .image-container>img{
+   width: 100%;
+   height: fit-content;
+}
+
+
+.div-two{
+   width: 100%;
+   height: 800px;
+   border: 1px solid red;
+   background: url(/images/globe.webp);
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+   
