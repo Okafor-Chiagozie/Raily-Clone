@@ -6,6 +6,7 @@
    justify-content: flex-start;
    align-items: center;
    padding-top: 65px;
+   z-index: 2;
 }
 
 .div-one .banner-image{
@@ -50,11 +51,159 @@
 
 
 .div-two{
+   position: relative;
+   overflow-x: auto;
+   translate: 0px -120px;
    width: 100%;
-   height: 800px;
-   border: 1px solid red;
-   background: url(/images/globe.webp);
-   background-size: contain;
-   background-repeat: no-repeat;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   overflow: visible;
+   /* border: 1px solid blue; */
+}
+
+.div-two .image-wrapper{
+   position: relative;
+   width: 850px;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-two .image-wrapper>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-two .image-wrapper .globe-float{
+   position: absolute;
+   top: 0;
+}
+
+.div-two .image-wrapper .globe-hide{
+   opacity: 0;
+}
+
+.div-two .globe-text{
+   position: absolute;
+   bottom: 250px;
+   width: auto;
+   height: auto;
+   text-align: center;
+   font-weight: 300;
+   font-size: 2.5rem;
+}
+
+.div-two .company-section{
+   position: absolute;
+   bottom: 130px;
+   width: min(580px, 90%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   border-radius: 20px;
+   padding: 3px;
+   background-color: var(--transparent-color);
+}
+
+.div-two .company-section>section{
+   max-width: 70px;
+   width: max-content;
+   max-height: 50px;
+   display: flex;
+   justify-content: center;
+   font-size: 0.6rem;
+   margin: 5px;
+}
+
+.div-two .company-section .duo{
+   flex-direction: column;
+   font-size: 0.5rem;
+}
+
+.div-two .company-section .image-container>img{
+   max-width: 100%;
+   width: auto;
+}
+
+.div-two .rating-section{
+   position: absolute;
+   bottom: 0px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   translate: 0px calc(100% + 100px);
+   width: min(580px, 90%);
+   height: auto;
+   z-index: 2;
+   border: 1px solid blue;
+}
+
+.div-two .rating-section .rating-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: auto;
+}
+
+.div-two .rating-section .rating-container>h2{
+   font-size: 3rem;
+   font-weight: 300;
+   flex: 1;
+}
+
+.div-two .rating-section .rating-container .star-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-two .rating-section .rating-container .star-container .image-section{
+   width: 60px;
+   height: auto;
+}
+
+.div-two .rating-section .rating-container .star-container .image-section>img{
+   width: auto;
+   max-width: 100%;
+}
+
+.div-two .rating-section .rating-container .star-container>span{
+   font-weight: bold;
+   margin-left: 10px;
+}
+
+.div-two .rating-section .rating-container>p{
+   width: auto;
+   height: max-content;
+   display: flex;
+   font-size: 0.65rem;
+   margin-left: 15px;
+   background-color: var(--transparent-color);
+   padding-block: 5px;
+   padding-inline: 12px;
+   border-radius: 50px;
+}
+
+.div-two .user-images-section{
+
+}
+
+
+
+
+.div-three{ 
+   width: 100%;
+   height: 80vh;
+   padding-top: 200px;
+   /* border: 1px solid red; */
 }
    

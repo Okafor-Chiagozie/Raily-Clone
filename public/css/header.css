@@ -19,6 +19,8 @@
    --third-grey: #959595;
    --fourth-grey: #686868;
 
+   --transparent-color: rgba(120, 120, 120, 0.36);
+
    --rem-4: 4rem;
    --rem-3: 3rem;
    --rem-2-5: 2.5rem;
@@ -59,7 +61,8 @@ body{
    justify-content: space-between;
    align-items: center;
    margin-top: 6px;
-   padding-inline: 20px;
+   padding-inline: 1.5%;
+   z-index: 3;
 }
 
 .main-header .logo-section{
@@ -81,8 +84,8 @@ body{
    align-items: center;
    padding-block: 5px;
    padding-inline: 10px;
-   background-color: rgba(255, 255, 255, 0.18);
-   backdrop-filter: blur(5px);
+   background-color: var(--transparent-color);
+   backdrop-filter: blur(10px);
    border-radius: 50px;
 }
 
@@ -90,15 +93,15 @@ body{
    color: var(--main-white);
    text-decoration: none;
    font-size: 0.65rem;
-   font-weight: 500;
    padding-block: 5px;
    padding-inline: 21px;
    border-radius: 50px;
    transition: 0.5s;
+   /* letter-spacing: 0.05px; */
 }
 
 .main-header .menu-section>a:hover{
-   background-color: rgba(255, 255, 255, 0.1);
+   background-color: var(--transparent-color);
 }
 
 .main-header .contact-section{
@@ -113,6 +116,5 @@ body{
    color: var(--main-white);
    text-decoration: none;
    font-size: 0.65rem;
-   font-weight: 500;
 }
    
