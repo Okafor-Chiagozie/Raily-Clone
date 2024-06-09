@@ -1,3 +1,6 @@
+/* ======================================== */
+/* Div-One -------------------------> Start */
+/* ======================================== */
 .div-one{
    width: 100%;
    height: auto;
@@ -48,8 +51,15 @@
    width: 100%;
    height: fit-content;
 }
+/* ======================================== */
+/* Div-One ---------------------------> End */
+/* ======================================== */
 
 
+
+/* ======================================== */
+/* Div-Two -------------------------> Start */
+/* ======================================== */
 .div-two{
    position: relative;
    overflow-x: auto;
@@ -94,7 +104,6 @@
    width: auto;
    height: auto;
    text-align: center;
-   font-weight: 300;
    font-size: 2.5rem;
 }
 
@@ -143,7 +152,7 @@
    width: min(580px, 90%);
    height: auto;
    z-index: 2;
-   border: 1px solid blue;
+   overflow: visible;
 }
 
 .div-two .rating-section .rating-container{
@@ -154,9 +163,8 @@
    height: auto;
 }
 
-.div-two .rating-section .rating-container>h2{
+.div-two .rating-section .rating-container>h3{
    font-size: 3rem;
-   font-weight: 300;
    flex: 1;
 }
 
@@ -193,17 +201,409 @@
    border-radius: 50px;
 }
 
-.div-two .user-images-section{
-
+.div-two .user-image-section{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
 }
 
+.div-two .user-image-section .user-image-container{
+   position: relative;
+   width: 35px;
+   height: 35px;
+   border: 4px solid rgba(255, 255, 255, 0.5);
+   display: flex;
+   border-radius: 50%;
+   margin-left: -5px;
+   transition: 0.3s;
+}
 
+.div-two .user-image-section .user-image-container:nth-child(1){
+   margin-left: 0px;
+}
 
-
-.div-three{ 
+.div-two .user-image-section .user-image-container::before{
+   content: "";
+   position: absolute;
+   top: 0;
    width: 100%;
-   height: 80vh;
+   height: 100%;
+   border-radius: 50%;
+   background-color: transparent;
+}
+
+.div-two .user-image-section .user-image-container:hover{
+   scale: 1.3;
+   z-index: 3;
+}
+
+.div-two .user-image-section .user-image-container:hover::before{
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.div-two .user-image-section .user-image-container>img{
+   width: 100%;
+   height: fit-content;
+}
+/* ======================================== */
+/* Div-Two ---------------------------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* General Section Heading Design --> Start */
+/* ======================================== */
+.section-heading{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 4.95rem;
+}
+
+.section-heading>span{
+   text-align: center;
+}
+
+.section-heading .audio-section{
+   width: 25px;
+   height: 25px;
+   display: flex;
+   margin-left: 10px;
+   cursor: pointer;
+}
+
+.section-heading .audio-section>img{
+   width: 100%;
+   height: fit-content;
+   filter: invert(100%) grayscale(100%);
+   background-blend-mode: darken;
+}
+/* ======================================== */
+/* General Section Heading Design --> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* Div-Three -----------------------> Start */
+/* ======================================== */
+.div-three{
+   width: 100%;
+   height: auto;
    padding-top: 200px;
+   padding-bottom: 100px;
+}
+
+.div-three .section-body{
+   position: relative;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   overflow: visible;
+}
+
+.div-three .section-body .image-slide-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container{
+   width: calc(100% / 4);
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container .text-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+   padding-inline: calc((100% / 4) / 2.5);
+   display: none;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container .text-section>h4{
+   font-size: 2rem;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container .text-section>p{
+   font-size: 0.8rem;
+   text-align: center;
+   color: gray;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container .image-section{
+   width: 50%;
+   height: auto;
+   display: flex;
+   align-items: flex-end;
+}
+
+.div-three .section-body .image-slide-section .image-slide-container .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-three .section-body .image-slide-section .color-effect{
+   position: absolute;
+   top: 0;
+   left: 0%;
+   width: calc(100% / 4);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
+   z-index: -1;
+}
+
+.div-three .section-body .image-slide-section .color-effect>img{
+   min-width: 140%;
+   height: fit-content;
+}
+
+.div-three .section-body .indicator-slide-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
+}
+
+.div-three .section-body .indicator-slide-section .first-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .indicator-slide-section .first-section>span{
+   flex: 1;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .indicator-slide-section .first-section>span>span{
+   width: 1px;
+   height: 30px;
+   background-color: grey;
+}
+
+.div-three .section-body .indicator-slide-section .second-section{
+   position: relative;
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
+}
+
+.div-three .section-body .indicator-slide-section .second-section>span{
+   flex: 1;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .indicator-slide-section .second-section>span>span{
+   width: 13px;
+   height: 13px;
+   border-radius: 50%;
+   background-color: var(--main-black);
+   border: 1px solid grey;
+   z-index: 1;
+}
+
+.div-three .section-body .indicator-slide-section .second-section .slide-line{
+   position: absolute;
+   top: 50%;
+   width: 100%;
+   height: 1px;
+   background-color: grey;
+}
+
+.div-three .section-body .indicator-slide-section .second-section .slide-image-section{
+   position: absolute;
+   top: 50%;
+   left: 0%;
+   width: calc(100% / 4);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   translate: 0% -50%;
+}
+
+.div-three .section-body .indicator-slide-section .second-section .slide-image-section .slide-image-container{
+   width: 65%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-three .section-body .indicator-slide-section .second-section .slide-image-section .slide-image-container>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-three .section-body .text-slide-section{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 150px;
+}
+
+.div-three .section-body .text-slide-section .text-slide-container{
+   width: calc(100% / 4);
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-inline: 2.5%;
+}
+
+.div-three .section-body .text-slide-section .text-slide-container>h4{
+   font-size: 2rem;
+}
+   
+.div-three .section-body .text-slide-section .text-slide-container>p{
+   font-size: 0.8rem;
+   text-align: center;
+   color: gray;
+}
+/* ======================================== */
+/* Div-Three -------------------------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* General Email Section Design ----> Start */
+/* ======================================== */
+.email-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.email-section .email-form{
+   width: min(440px, 90%);
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.email-section .email-form>input{
+   height: 40px;
+   background-color: transparent;
+   outline: none;
+   border-radius: 50px;
+   margin-inline: 7px;
+   font-family: lufga, sans-serif;
+   font-size: 0.8rem;
+   font-weight: 300;
+   transition: 0.2s;
+}
+
+.email-section .email-form>input[type="email"]{
+   width: 55%;
+   padding-left: 4%;
+   border: 1px solid var(--main-white);
+}
+
+.email-section .email-form>input[type="email"]::placeholder{
+   color: silver;
+}
+
+.email-section .email-form>input[type="email"]:focus{
+   border: 1px solid var(--main-green);
+}
+
+.email-section .email-form>input[type="submit"]{
+   width: 45%;
+   background-color: var(--main-green);
+   border: 1px solid var(--main-green);
+   cursor: pointer;
+}
+/* ======================================== */
+/* General Email Section Design ------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* Div-Four ------------------------> Start */
+/* ======================================== */
+.div-four{
+   width: 100%;
+   height: auto;
+   /* padding-bottom: 100px; */
+}
+
+.div-four .section-body{
+   position: relative;
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 50px;
+   overflow: visible;
+}
+
+.div-four .section-body .ripple-container{
+   position: relative;
+   width: 70%;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: visible;
    /* border: 1px solid red; */
 }
+
+.div-four .section-body .ripple-container>img{
+   width: 100%;
+   height: fit-content;
+   opacity: 0.7;
+   rotate: x 58.5deg;
+}
+
+
+/* ======================================== */
+/* Div-Four --------------------------> End */
+/* ======================================== */
    

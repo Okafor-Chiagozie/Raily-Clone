@@ -3,11 +3,13 @@
    margin: 0;
    box-sizing: border-box;
    overflow-x: hidden;
+   font-weight: 300;
 }
 
 :root{
    --main-white: #ffffff;
    --main-black: #000000;
+   --main-green: #a7f9c3;
 
    --primary-color: #9F7A57;
    --secondary-color: #d0d8de;

@@ -14,7 +14,7 @@
    <body>
       <header class="main-header">
          <section class="logo-section">
-            <img src="{{ url('images/logo.svg') }}" alt="Logo Image">
+            <img src="{{ url('images/logo.svg') }}" alt="Raily logo">
          </section>
 
          <section class="menu-section">

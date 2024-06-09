@@ -71,7 +71,7 @@
 
       <section class="rating-section">
          <section class="rating-container">
-            <h2 class="">Loved by</h2>
+            <h3>Loved by</h3>
 
             <section class="star-container">
                <section class="image-section">
@@ -84,13 +84,237 @@
             <p>Spill Your Thoughts</p>
          </section>
 
-         <section class="user-images-section">
-            <h4>Hello</h4>
+         <section class="user-image-section">
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
+            <section class="user-image-container">
+               <img src="{{ url('images/user-image-1.webp') }}" alt="User-image">
+            </section>
          </section>
       </section>
    </div>
 
    <div class="div-three">
-      <h1>Welcome</h1>
+      <h2 class="section-heading">
+         <span>Meet Raily where you can</span>
+
+         <section class="audio-section">
+            <img src="{{ url('images/audio.svg') }}" alt="Audio image">
+         </section>
+      </h2>
+
+      <section class="section-body">
+         <section class="image-slide-section">
+            <section class="image-slide-container">
+               <section class="text-section">
+                  <h4>Connect</h4>
+                  <p>Meet interesting people anywhere with our AI matchmaker.</p>
+               </section>
+
+               <section class="image-section">
+                  <img src="{{ url('images/phone-slide-1.webp') }}" alt="Meet Raily where you can">
+               </section>
+            </section>
+
+            <section class="image-slide-container">
+               <section class="text-section">
+                  <h4>Discover</h4>
+                  <p>See who's at your destination or nearby that shares your interests.</p>
+               </section>
+
+               <section class="image-section">
+                  <img src="{{ url('images/phone-slide-2.webp') }}" alt="Meet Raily where you can">
+               </section>
+            </section>
+
+            <section class="image-slide-container">
+               <section class="text-section">
+                  <h4>Bond</h4>
+                  <p>Moving or relaxing, our AI magically finds your connections.</p>
+               </section>
+
+               <section class="image-section">
+                  <img src="{{ url('images/phone-slide-3.webp') }}" alt="Meet Raily where you can">
+               </section>
+            </section>
+            
+            <section class="image-slide-container">
+               <section class="text-section">
+                  <h4>Explore</h4>
+                  <p>Journey together to new places and experiences with Raily AI concierge.</p>
+               </section>
+
+               <section class="image-section">
+                  <img src="{{ url('images/phone-slide-4.webp') }}" alt="Meet Raily where you can">
+               </section>
+            </section>
+
+            <section class="color-effect">
+               <img src="{{ url('images/color-effect.webp') }}" alt="Color effect">
+            </section>
+         </section>
+
+         <section class="indicator-slide-section">
+            <section class="first-section">
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+            </section>
+
+            <section class="second-section">
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+
+               <span>
+                  <span></span>
+               </span>
+
+               <section class="slide-line"></section>
+
+               <section class="slide-image-section">
+                  <section class="slide-image-container">
+                     <img src="{{ url('images/slide.svg') }}" alt="Slide image">
+                  </section>
+               </section>
+            </section>
+         </section>
+
+         <section class="text-slide-section">
+            <section class="text-slide-container">
+               <h4>Connect</h4>
+               <p>Meet interesting people anywhere with our AI matchmaker.</p>
+            </section>
+
+            <section class="text-slide-container">
+               <h4>Discover</h4>
+               <p>See who's at your destination or nearby that shares your interests.</p>
+            </section>
+
+            <section class="text-slide-container">
+               <h4>Bond</h4>
+               <p>Moving or relaxing, our AI magically finds your connections.</p>
+            </section>
+
+            <section class="text-slide-container">
+               <h4>Explore</h4>
+               <p>Journey together to new places and experiences with Raily AI concierge.</p>
+            </section>
+         </section>
+
+         <section class="email-section">
+            <form action="#" method="post" class="email-form">
+               <input type="email" name="email" placeholder="Enter your email" required>
+               <input type="submit" value="Ask for Early Access" name="submit">
+            </form>
+         </section>
+      </section>
+   </div>
+
+   <div class="div-four">
+      <h2 class="section-heading">
+         <span>Raily ecosystem</span>
+
+         <section class="audio-section">
+            <img src="{{ url('images/audio.svg') }}" alt="Audio image">
+         </section>
+      </h2>
+
+      <section class="section-body">
+         <section class="ripple-container">
+            <img src="{{ url('images/ripple.svg') }}" alt="Ripple effect">
+
+            <section class="orbit-section">
+               <section class="first--section">
+                  <section class="image-section">
+                     <img src="{{ url('images/yi.svg') }}" alt="AI image">
+                  </section>
+               </section>
+
+               <section class="second-section">
+                  <span>Matchmaking</span>
+                  <section class="image-section">
+                     <img src="{{ url('images/raily.webp') }}" alt="Raily logo">
+                  </section>
+                  <span>Concierge</span>
+               </section>
+
+               <section></section>
+            </section>
+         </section>
+
+         <section>
+
+         </section>
+      </section>
    </div>
 @endsection
