@@ -1,0 +1,90 @@
+
+@media only screen and (max-width: 900px){
+   /* .div-two .globe-text{
+      font-size: 4rem;
+   } */
+   
+   .div-two .company-section{
+      bottom: 0;
+   }
+
+   .div-two .user-image-section .remove-1{
+      display: none;
+   }
+
+   .div-two .user-image-section .user-image-container{
+      width: 40px;
+      height: 40px;
+   }
+
+   .div-three .section-body .indicator-slide-section{
+      display: none;
+   }
+
+   .div-three .section-body .text-slide-section{
+      display: none;
+   }
+
+   .div-three .section-body .email-section{
+      margin-block: 50px;
+   }
+
+   .div-three .section-body .image-slide-section .color-effect{
+      display: none;
+   }
+
+   .div-three .section-body .image-slide-section .image-slide-container .text-section{
+      display: flex;
+   }
+
+   .div-three .section-body .image-slide-section .image-slide-container{
+      width: calc(100% / 2);
+      margin-block: 10px;
+   }
+
+   .video-section{
+      padding-block: 0;
+      height: auto;
+   }
+}
+
+
+@media only screen and (max-width: 600px){
+   .div-four .section-body .eco-container-1 .tag-section,
+   .div-four .section-body .eco-container-2 .tag-section,
+   .div-four .section-body .eco-container-3 .tag-section,
+   .div-four .section-body .eco-container-4 .tag-section{
+      padding: 4px;
+   }
+   
+   .div-four .section-body .eco-container-1 .tag-section>*,
+   .div-four .section-body .eco-container-2 .tag-section>*,
+   .div-four .section-body .eco-container-3 .tag-section>*,
+   .div-four .section-body .eco-container-4 .tag-section>*{
+      margin-inline: 5px;
+   }
+   
+   .div-four .section-body .eco-container-1 .tag-section .icon-section,
+   .div-four .section-body .eco-container-2 .tag-section .icon-section,
+   .div-four .section-body .eco-container-3 .tag-section .icon-section,
+   .div-four .section-body .eco-container-4 .tag-section .icon-section{
+      width: 15px;
+   }
+   
+   .video-standalone{
+      margin-block: 50px;
+   }
+}
+
+   
+@media only screen and (max-width: 500px){
+   .div-five .section-body .first-grid,
+   .div-five .section-body .second-grid{
+      display: none;
+   }
+
+   .div-three .section-body .image-slide-section .image-slide-container{
+      width: calc(100% / 1);
+      margin-block: 10px;
+   }
+}

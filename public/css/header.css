@@ -10,30 +10,22 @@
    --main-white: #ffffff;
    --main-black: #000000;
    --main-green: #a7f9c3;
-
-   --primary-color: #9F7A57;
-   --secondary-color: #d0d8de;
-   
-   --background-grey: #f7f7f7;
-   --first-grey: #f2f2f2;
-   --second-grey: #e6e7ee;
-   --semi-second-grey: #d3d3d6;
-   --third-grey: #959595;
-   --fourth-grey: #686868;
+   --dark-green: #5bff9d;
+   --main-purple: #9a5bff;
+   --main-grey: #252525;
 
    --transparent-color: rgba(120, 120, 120, 0.36);
-
-   --rem-4: 4rem;
+   
+   --rem-4-95: 4.95rem;
    --rem-3: 3rem;
    --rem-2-5: 2.5rem;
    --rem-2: 2rem;
-   --rem-1-8: 1.8rem;
-   --rem-1-5: 1.5rem;
-   --rem-1-4: 1.4rem;
    --rem-1-3: 1.3rem;
    --rem-1-2: 1.2rem;
-   --rem-1-1: 1.1rem;
-   --rem-1: 1rem;
+   --rem-0-65: 0.65rem;
+   --rem-0-8: 0.8rem;
+   --rem-0-6: 0.6rem;
+   --rem-0-5: 0.5rem;
 }
 
 @font-face {
@@ -120,3 +112,63 @@ body{
    font-size: 0.65rem;
 }
    
+
+@media only screen and (max-width: 900px) {
+   :root{
+      --rem-4-95: 4rem;
+      --rem-3: 3rem;
+      --rem-2-5: 2.5rem;
+      --rem-2: 2rem;
+      --rem-1-3: 1.3rem;
+      --rem-1-2: 1.2rem;
+      --rem-0-65: 0.65rem;
+      --rem-0-8: 0.8rem;
+      --rem-0-6: 0.6rem;
+      --rem-0-5: 0.5rem;
+   }
+}
+
+@media only screen and (max-width: 700px) {
+   :root{
+      --rem-4-95: 4rem;
+      --rem-3: 3rem;
+      --rem-2-5: 2.5rem;
+      --rem-2: 2rem;
+      --rem-1-3: 1.3rem;
+      --rem-1-2: 1rem;
+      --rem-0-65: 0.65rem;
+      --rem-0-8: 0.8rem;
+      --rem-0-6: 0.6rem;
+      --rem-0-5: 0.5rem;
+   }
+}
+
+@media only screen and (max-width: 600px) {
+   :root{
+      --rem-4-95: 2rem;
+      --rem-3: 3rem;
+      --rem-2-5: 1.5rem;
+      --rem-2: 2rem;
+      --rem-1-3: 1.3rem;
+      --rem-1-2: 0.7rem;
+      --rem-0-65: 0.65rem;
+      --rem-0-8: 0.8rem;
+      --rem-0-6: 0.6rem;
+      --rem-0-5: 0.5rem;
+   }
+}
+
+@media only screen and (max-width: 500px) {
+   :root{
+      --rem-4-95: 3.5rem;
+      --rem-3: 3rem;
+      --rem-2-5: 1.5rem;
+      --rem-2: 2rem;
+      --rem-1-3: 1.3rem;
+      --rem-1-2: 1rem;
+      --rem-0-65: 0.65rem;
+      --rem-0-8: 0.8rem;
+      --rem-0-6: 0.6rem;
+      --rem-0-5: 0.5rem;
+   }
+}

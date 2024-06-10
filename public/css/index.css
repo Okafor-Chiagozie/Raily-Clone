@@ -13,13 +13,12 @@
 }
 
 .div-one .banner-image{
-   width: 100%;
+   width: 90%;
    height: auto;
    display: flex;
-   /* border: 1px solid red; */
 }
 
-.div-one .banner-image{
+.div-one .banner-image>img{
    width: 100%;
    height: fit-content;
 }
@@ -28,13 +27,13 @@
    width: 100%;
    height: auto;
    text-align: center;
-   font-size: 1.3rem;
+   font-size: var(--rem-1-3);
    letter-spacing: 0.2px;
 }
 
 .div-one .image-group{
    margin-top: 23px;
-   width: auto;
+   width: min(600px, 80%);
    height: auto;
    display: flex;
    justify-content: center;
@@ -42,7 +41,8 @@
 }
 
 .div-one .image-group .image-container{
-   width: 178px;
+   /* width: 178px; */
+   flex: 1;
    height: auto;
    display: flex;
 }
@@ -50,6 +50,10 @@
 .div-one .image-group .image-container>img{
    width: 100%;
    height: fit-content;
+}
+
+.div-one .email-section{
+   margin-block: 50px;
 }
 /* ======================================== */
 /* Div-One ---------------------------> End */
@@ -77,7 +81,7 @@
 
 .div-two .image-wrapper{
    position: relative;
-   width: 850px;
+   width: min(850px, 90%);
    height: auto;
    display: flex;
    justify-content: center;
@@ -95,7 +99,7 @@
 }
 
 .div-two .image-wrapper .globe-hide{
-   opacity: 0;
+   opacity: 1;
 }
 
 .div-two .globe-text{
@@ -104,7 +108,7 @@
    width: auto;
    height: auto;
    text-align: center;
-   font-size: 2.5rem;
+   font-size: var(--rem-2-5);
 }
 
 .div-two .company-section{
@@ -127,13 +131,13 @@
    max-height: 50px;
    display: flex;
    justify-content: center;
-   font-size: 0.6rem;
+   font-size: var(--rem-0-6);
    margin: 5px;
 }
 
 .div-two .company-section .duo{
    flex-direction: column;
-   font-size: 0.5rem;
+   font-size: var(--rem-0-5);
 }
 
 .div-two .company-section .image-container>img{
@@ -164,7 +168,7 @@
 }
 
 .div-two .rating-section .rating-container>h3{
-   font-size: 3rem;
+   font-size: var(--rem-3);
    flex: 1;
 }
 
@@ -193,7 +197,7 @@
    width: auto;
    height: max-content;
    display: flex;
-   font-size: 0.65rem;
+   font-size: var(--rem-0-65);
    margin-left: 15px;
    background-color: var(--transparent-color);
    padding-block: 5px;
@@ -263,7 +267,8 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   font-size: 4.95rem;
+   font-size: var(--rem-4-95);
+   padding-inline: 10px;
 }
 
 .section-heading>span{
@@ -318,6 +323,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   flex-wrap: wrap;
 }
 
 .div-three .section-body .image-slide-section .image-slide-container{
@@ -342,11 +348,11 @@
 }
 
 .div-three .section-body .image-slide-section .image-slide-container .text-section>h4{
-   font-size: 2rem;
+   font-size: var(--rem-2);
 }
 
 .div-three .section-body .image-slide-section .image-slide-container .text-section>p{
-   font-size: 0.8rem;
+   font-size: var(--rem-0-8);
    text-align: center;
    color: gray;
 }
@@ -492,11 +498,11 @@
 }
 
 .div-three .section-body .text-slide-section .text-slide-container>h4{
-   font-size: 2rem;
+   font-size: var(--rem-2);
 }
    
 .div-three .section-body .text-slide-section .text-slide-container>p{
-   font-size: 0.8rem;
+   font-size: var(--rem-0-8);
    text-align: center;
    color: gray;
 }
@@ -518,7 +524,7 @@
 }
 
 .email-section .email-form{
-   width: min(440px, 90%);
+   width: min(500px, 90%);
    height: auto;
    display: flex;
    justify-content: center;
@@ -532,7 +538,7 @@
    border-radius: 50px;
    margin-inline: 7px;
    font-family: lufga, sans-serif;
-   font-size: 0.8rem;
+   font-size: var(--rem-0-8);
    font-weight: 300;
    transition: 0.2s;
 }
@@ -570,6 +576,7 @@
    width: 100%;
    height: auto;
    /* padding-bottom: 100px; */
+   overflow: hidden;
 }
 
 .div-four .section-body{
@@ -582,12 +589,14 @@
    align-items: center;
    margin-top: 50px;
    overflow: visible;
+   /* border: 1px solid white; */
 }
 
 .div-four .section-body .ripple-container{
    position: relative;
-   width: 70%;
-   height: 500px;
+   width: min(900px, 100%); /* 70% */
+   height: auto;
+   margin-top: -10%;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -602,8 +611,565 @@
    rotate: x 58.5deg;
 }
 
+.div-four .section-body .ripple-container .orbit-section{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   width: min(400px, 90%);
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
 
+.div-four .section-body .ripple-container .orbit-section .first-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-four .section-body .ripple-container .orbit-section .first-section .image-section{
+   width: 35px;
+   height: auto;
+   display: flex;
+}
+
+.div-four .section-body .ripple-container .orbit-section .first-section .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-block: 15px;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section>*{
+   flex: 1;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section>span{
+   padding: 10px;
+   border-radius: 50px;
+   background-color: var(--dark-green);
+   color: var(--main-black);
+   text-align: center;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section>:nth-child(3){
+   background-color: var(--main-purple) !important;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section .image-section{
+   width: 65px;
+   height: auto;
+   display: flex;
+   flex: none;
+   margin-inline: 20px;
+}
+
+.div-four .section-body .ripple-container .orbit-section .second-section .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+/* =========== */
+.div-four .section-body .eco-container-1{
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 50%;
+   max-width: 50%;
+   height: auto;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   /* border: 1px solid white; */
+   translate: -31% 0%;
+}
+
+.div-four .section-body .eco-container-1 .image-section{
+   width: 75%;
+   height: auto;
+   display: flex;
+   margin: 0;
+}
+
+.div-four .section-body .eco-container-1 .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-four .section-body .eco-container-1 .tag-section{
+   width: auto;
+   height: auto;
+   padding: 8px;
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid grey;
+   background-color: var(--main-grey);
+   border-radius: 50px;
+   /* margin-left: -50px; */
+}
+
+.div-four .section-body .eco-container-1 .tag-section>*{
+   margin-inline: 12px;
+}
+
+.div-four .section-body .eco-container-1 .tag-section>span{
+   font-size: var(--rem-1-2);
+}
+
+.div-four .section-body .eco-container-1 .tag-section .icon-section{
+   width: 20px;
+   height: auto;
+}
+
+.div-four .section-body .eco-container-1 .tag-section .icon-section>img{
+   width: 100%;
+   height: auto;
+}
+
+/* =============== 2 */
+.div-four .section-body .eco-container-2{
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   width: 50%;
+   max-width: 50%;
+   height: auto;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   /* border: 1px solid white; */
+}
+
+.div-four .section-body .eco-container-2 .image-section{
+   width: 35%;
+   height: auto;
+   display: flex;
+   margin: 0;
+}
+
+.div-four .section-body .eco-container-2 .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-four .section-body .eco-container-2 .tag-section{
+   width: auto;
+   height: auto;
+   padding: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid grey;
+   background-color: var(--main-grey);
+   border-radius: 50px;
+}
+
+.div-four .section-body .eco-container-2 .tag-section>*{
+   margin-inline: 12px;
+}
+
+.div-four .section-body .eco-container-2 .tag-section>span{
+   font-size: var(--rem-1-2);
+}
+
+.div-four .section-body .eco-container-2 .tag-section .icon-section{
+   width: 20px;
+   height: auto;
+}
+
+.div-four .section-body .eco-container-2 .tag-section .icon-section>img{
+   width: 100%;
+   height: auto;
+}
+
+/* =============== 3 */
+.div-four .section-body .eco-container-3{
+   position: absolute;
+   bottom: 0%;
+   left: 0%;
+   width: 50%;
+   max-width: 50%;
+   height: auto;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   /* border: 1px solid white; */
+   padding-inline: 1%;
+   translate: 0% -20%;
+}
+
+.div-four .section-body .eco-container-3 .image-section{
+   width: 30%;
+   height: auto;
+   display: flex;
+   margin: 0;
+}
+
+.div-four .section-body .eco-container-3 .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-four .section-body .eco-container-3 .tag-section{
+   width: auto;
+   height: auto;
+   padding: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid grey;
+   background-color: var(--main-grey);
+   border-radius: 50px;
+}
+
+.div-four .section-body .eco-container-3 .tag-section>*{
+   margin-inline: 12px;
+}
+
+.div-four .section-body .eco-container-3 .tag-section>span{
+   font-size: var(--rem-1-2);
+}
+
+.div-four .section-body .eco-container-3 .tag-section .icon-section{
+   width: 20px;
+   height: auto;
+}
+
+.div-four .section-body .eco-container-3 .tag-section .icon-section>img{
+   width: 100%;
+   height: auto;
+}
+
+/* =============== 4 */
+.div-four .section-body .eco-container-4{
+   position: absolute;
+   bottom: 0%;
+   right: 0%;
+   width: 50%;
+   max-width: 50%;
+   height: auto;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   /* border: 1px solid white; */
+   padding-inline: 1%;
+   translate: 0% -15%;
+}
+
+.div-four .section-body .eco-container-4 .image-section{
+   width: 28%;
+   height: auto;
+   display: flex;
+   margin: 0;
+}
+
+.div-four .section-body .eco-container-4 .image-section>img{
+   width: 100%;
+   height: fit-content;
+}
+
+.div-four .section-body .eco-container-4 .tag-section{
+   width: auto;
+   height: auto;
+   padding: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid grey;
+   background-color: var(--main-grey);
+   border-radius: 50px;
+}
+
+.div-four .section-body .eco-container-4 .tag-section>*{
+   margin-inline: 12px;
+}
+
+.div-four .section-body .eco-container-4 .tag-section>span{
+   font-size: var(--rem-1-2);
+}
+
+.div-four .section-body .eco-container-4 .tag-section .icon-section{
+   width: 20px;
+   height: auto;
+}
+
+.div-four .section-body .eco-container-4 .tag-section .icon-section>img{
+   width: 100%;
+   height: auto;
+}
 /* ======================================== */
 /* Div-Four --------------------------> End */
 /* ======================================== */
-   
+
+
+
+/* ======================================== */
+/* Div-Five ------------------------> Start */
+/* ======================================== */
+.div-five{
+   width: 100%;
+   height: auto;
+   /* padding-bottom: 100px; */
+   /* overflow: hidden; */
+}
+
+.div-five .section-body{
+   width: 100%;
+   /* height: 650px; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 12px;
+
+   /* display: grid;
+   grid-column-gap: 2em;
+   grid-row-gap: 2em;
+   column-count: auto;
+   flex-direction: row;
+   grid-template-rows: auto;
+   grid-template-columns: 1fr 52em;
+   grid-auto-columns: 1fr;
+   width: 100%;
+   margin-top: 6.8em; */
+}
+
+.div-five .section-body>*{
+   height: 100%;
+}
+
+.div-five .section-body .first-grid{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 72%;
+}
+
+/* ======== 1 - 1 */
+.div-five .section-body .first-grid .first-section{
+   width: 100%;
+   height: 30%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-five .section-body .first-grid .first-section>*{
+   width: 20%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 6px;
+}
+
+.div-five .section-body .first-grid .first-section>:nth-child(1),
+.div-five .section-body .first-grid .first-section>:nth-child(2){
+   width: 25.5%;
+}
+
+.div-five .section-body .first-grid .first-section>:nth-child(3){
+   flex: 1;
+}
+
+.div-five .section-body .first-grid .first-section>*>img{
+   width: 100%;
+   height: fit-content;
+}
+
+/* ======== 1 - 2 */
+.div-five .section-body .first-grid .second-section{
+   flex: 1;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-five .section-body .first-grid .second-section>*{
+   width: 20%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-five .section-body .first-grid .second-section .box-one{
+   width: 35%;
+   flex-direction: column;
+}
+
+.div-five .section-body .first-grid .second-section .box-one>*{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px;
+}
+
+.div-five .section-body .first-grid .second-section .box-one>:nth-child(1){
+   height: 30%;
+}
+
+.div-five .section-body .first-grid .second-section .box-one>:nth-child(2){
+   flex: 1;
+   height: 100%;
+}
+
+/* ===== 1 - 3 */
+.div-five .section-body .first-grid .second-section .box-two{
+   flex: 1;
+   width: auto;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-five .section-body .first-grid .second-section .box-two>:nth-child(1){
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px;
+}
+
+.div-five .section-body .first-grid .second-section .box-two>:nth-child(3),
+.div-five .section-body .first-grid .second-section .box-two>:nth-child(2){
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.div-five .section-body .first-grid .second-section .box-two>:nth-child(3)>*,
+.div-five .section-body .first-grid .second-section .box-two>:nth-child(2)>*{
+   padding: 6px;
+}
+
+.div-five .section-body .first-grid .second-section>*>*>img,
+.div-five .section-body .first-grid .second-section>*>*>*>img{
+   width: 100%;
+   height: fit-content;
+}
+
+/* ======= 2 - 1 */
+.div-five .section-body .second-grid{
+   flex: 1;
+   display: flex;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.feature-image-container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.feature-image-box{
+   width: auto;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px;
+}
+
+.feature-image{
+   width: 100%;
+   height: fit-content;
+}
+/* ======================================== */
+/* Div-Five --------------------------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* General Video Section design ----> Start */
+/* ======================================== */
+.video-section{
+   width: 95%;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
+   padding-block: -20px;
+   overflow: hidden;
+}
+
+.video-standalone{
+   margin-block: 100px;
+}
+
+.video-section>video{
+   width: 100%;
+   border-radius: 20px;
+}
+/* ======================================== */
+/* General Video Section design ------> End */
+/* ======================================== */
+
+
+
+/* ======================================== */
+/* Div-Six -------------------------> Start */
+/* ======================================== */
+.div-six{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-block: 50px;
+}
+
+.div-six .section-heading{
+   padding-inline: 2.5%;
+}
+
+.div-six .section-body{
+   width: 100%;
+   height: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-block: 30px;
+}
+
+.div-six .email-section{
+   margin-top: 100px;
+}
+/* ======================================== */
+/* Div-Six ---------------------------> End */
+/* ======================================== */
+
+
+
+
+

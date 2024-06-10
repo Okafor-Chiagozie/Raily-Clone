@@ -9,6 +9,7 @@
 
       @yield('css_script')
       <link rel="stylesheet" href="{{ URL('css/header.css') }}">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    </head>
 
    <body>
@@ -36,5 +37,9 @@
       @yield('body')
 
       @yield('js_script')
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+         AOS.init();
+       </script>
    </body>
 </html>
